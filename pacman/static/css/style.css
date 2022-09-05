@@ -1,0 +1,140 @@
+body {
+    background-color: #051937;
+}
+    .container {
+        width: 900px;
+        margin: auto;
+    }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            width: 560px;
+            height: 560px;
+            /* border: 1px solid blue; */
+            margin: auto;
+        }
+
+        .grid div {
+            width: 20px;
+            height: 20px;
+        }
+
+            .pac-dot {
+                background: url('../images/circle.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-size: 6px 6px;
+            }
+            
+            .wall {
+                background: url('../images/brickwall.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .power-pellet {
+                background: url('../images/cherry.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                transform: rotate(0deg);
+            }
+
+            .pac-man {
+                background: url('../images/pacman.gif');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .blinky {
+                background: url('../images/ghost.gif');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            
+            }
+
+        #score, #gameover {
+            color: white;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .wrapper{
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #chat {
+            display: inline-block;
+            width: 250px;
+            height: 560px;
+            border: 1px solid blue;
+            margin: auto;
+            margin-left: 20px;
+            /* box-shadow: rgba(255, 255, 255, 0.993) 0px 2px 8px 0px; */
+        }
+
+            #chatbox {
+                width: 210px;
+                height: 380px;
+                border: 1px solid blue;
+                margin: auto;
+                padding: 10px;
+                overflow-y: auto;
+                background-color: #FEFEDF;
+            }
+                .message {
+                    color: white;
+                    padding: 10px;
+                    background-color: rgb(88, 88, 236);
+                    width: 100px;
+                    border-radius: 3px;
+                }
+
+                .user_message {
+                    color: white;
+                    padding: 10px;
+                    background-color: rgb(5, 145, 5);
+                    width: 100px;
+                    margin-left: auto;
+                    border-radius: 3px;
+                }
+
+                #texbox {
+                    display: block;
+                    width: 200px;
+                    margin: 10px auto;
+                }
+
+                #send {
+                    display: block;
+                    width: 210px;
+                    margin: 10px auto;
+                    padding: 7px;
+                    color: white;
+                    background-color: green;
+                    cursor: pointer;
+                }
+
+    #results {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+        /* bottom: 425px; */
+        /* left: 675px; */
+
+        bottom: 410px;
+        left: 175px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        line-height: 500px;
+        text-align: center;
+        font-size: 30px;
+    }
+
